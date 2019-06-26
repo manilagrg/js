@@ -12,13 +12,15 @@ console.log(someText);
 
 console.log("old somenum" , someNumber);
 
-var someNumber = 100;
+var someNumber = 200;
+
 
 console.log(someNumber);
 
 console.log(20);
 
 console.log(30);
+console.log(90);
 
 console.log ("This is a string that will show up in console")
 
@@ -46,7 +48,7 @@ var firstName = "Shiva"
 var middleName = "Ram"
 var lastName    = "Gurung"
 
-var fullName = firstName +" " + middleName + " "+ lastName 
+var fullName = firstName  + middleName + lastName 
 
 console. log (fullName.length);
 
@@ -54,8 +56,25 @@ console. log(fullName.toUpperCase());
 
 console. log(lastName.toLowerCase());
 
-//alert(Hellow World)
+//alert(Hello World)
 
 var question = prompt("Enter your Name");
+console.log = "question"
+
+alert(question);
+
+var hello = "hello world";
+
+var message ="hello world";
+
+alert(message);
+alert(hello);
+
+let admin = "jhon";
+
+alert(admin);
+
+
+
 
 
