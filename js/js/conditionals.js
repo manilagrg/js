@@ -54,6 +54,18 @@ if(isNaN (secondNum)){
     console.error ("the second number you enter is not valid")
 }
 
-//ask 2 questions 
-// get the size of each question
-// show output of only largest answer
+if(isNaN(firstNum) || isNaN(secondNum)){
+    if(isNaN(firstNum)){
+        console.log("The first Number is not valid")
+    }
+    else{
+        console.log("The second Numbr is not a number")
+    }
+    console.error("Both has to be a number")
+}
+
+//======================================================
+
+
+
+
