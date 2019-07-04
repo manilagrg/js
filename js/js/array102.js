@@ -39,7 +39,7 @@ console.log(fruits);
 
 fruits.unshift("Banana");//unshift stand for Add the element to the beginning of the array:
 fruits.unshift("Strawberries", "Blueberries", "Cherry");//push and unshift can be add multipal elements once
-*/
+
 
 let animal = ["Chicken"]
 let arr = animal;
@@ -57,5 +57,58 @@ for( let animal of animals){
     console.log(animal);
 }
 
+
+let fruits = [];
+fruits[123] = "Apple";
+alert(fruits.length);
+*/
+/*
+var arr = [];
+for(var i = 1; i<=100; i++){
+    arr.push(i)
+}
+
+for(var i = 0; i<=5; i++){// to extract more than one elements from last need to use loop
+    arr.pop()
+}
+
+arr.splice(0, 9); //splice is stand for to extract more than one elements from array
+
+
+console.log(arr[arr.length - 6]);
+arr.splice(94, 5);// positon of index and number of removel item
+
+*/
+
+
+var multipalArr = [
+    ["Kathmandu", "Nepal", "Pokhara"],
+    ["Ram", "shyam", "Hari"],
+    [1, 2, 3, 4]
+];
+
+for(var a = 0; a < multipalArr.length; a++){
+    //console.log(multipalArr[a])
+    for(var b = 0; b < multipalArr[a].length; b++){
+        console.log(multipalArr[a][b]);
+    }
+}
+
+
+
+var multi = [
+    ["Harry", "Jhon", "Joe"],
+    ["student", "doctor", "teacher"],
+    [10,20,30],
+    ["Kathmandu", "Pokhara", "Bhaktapur"],
+    [1,2,3,4,5]
+]
+
+for(var i = 0; i < multi.length; i++){
+    //console.log(multi[i])
+    for(var c = 0; c < multi[i].length; c++){
+        console.log(multi[i][c])
+    }
+}
 
 
