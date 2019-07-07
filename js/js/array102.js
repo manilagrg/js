@@ -81,7 +81,7 @@ arr.splice(94, 5);// positon of index and number of removel item
 */
 
 
-var multipalArr = [
+var multipalArr = [//multidimensional loops on array
     ["Kathmandu", "Nepal", "Pokhara"],
     ["Ram", "shyam", "Hari"],
     [1, 2, 3, 4]
