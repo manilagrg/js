@@ -35,7 +35,7 @@ function fullName(a){
 }
 var lastName = "Gurung"
 console.log(fullName(lastName));
-*/
+
 
 
 
@@ -58,17 +58,21 @@ function askUserForInput(){
 }
 
 askUserForInput()
+*/
 
+/*
 function test (){
     var firstnum = prompt("Enter a number");
     var secondnum = prompt("Enter second number");
 
-    console.log("Second input is greater than", firstnum);
+    
 
     if(firstnum > secondnum){
+        console.log("First input is greater than", secondnum);
         return secondnum;
     }
     else{
+        console.log("Second input is greater than", firstnum);
         return firstnum;
     }
         
@@ -85,12 +89,122 @@ function inputNum(){
     }
 }
 
-
-console.log(inputNum());
-/*
-function addnum (){
-    var firstnum = prompt("Enter a number");
-
-}
+inputNum();
 */
+
+function go(name, age){
+    if (age <= 20){
+        return name+`!`;
+    }
+    
+        return name;
+}
+ var age = go("Manila", 19);
+ console.log(age)
+
+
+function divide(a, b){
+    return a/b;
+}
+function sum(a, b){
+    return a + b;
+}
+
+function subract(a, b){
+    return a - b;
+}
+function multiply(a, b){
+    return a * b;
+}
+function modulo(a, b){
+    return a % b;
+}
+
+
+function takeTest(){
+    var question1 = prompt("Enter first Number");
+    var question2 = prompt("Enter second Number");
+
+    var question1 = parseInt(question1);
+    var question2 = parseInt(question2);
+
+    console.log(question1)
+    console.log(question2)
+
+
+    console.log("The division is", divide(question1,question2));
+    console.log("The sum is", sum(question1,question2));
+    console.log("The sub is", subract(question1,question2));
+    console.log("The multiply is", multiply(question1,question2));
+    console.log("The modulo is", modulo(question1,question2));
+}
+
+takeTest()
+
+function askUserForInput(){
+    var answer = confirm("Do you want to take quiz")
+    if (answer){
+        console.log(answer)
+        takeTest()
+    }
+    else{
+        alert("Goodbye");
+    }
+}
+
+
+
+function people(name, eyeColor, age){
+    for(var a = 0; a < name.length; a++){
+      console.log(name[a]);
+    }
+    return{
+    name: name,
+    eyeColor: eyeColor,
+    age: age,
+ };
+}
+    let person01 = people(["Manila", "Brown", 33]);
+    let person02 = people(["Neeta", "Black", 34]);
+    let person03 = people(["Dolma", "Black", 27]);
+
+
+
+
+
+function product(name, brand, sku, price,description){
+    for(var a = 0; a < name.length; a++){
+        console.log(name[a])
+        
+    }
+    return{
+        name: name,
+        brand: brand,
+        sku: sku,
+        price: price,
+        description: description
+    }
+}
+
+var product01 = product(["Pant", "Levis", 5, 1000, "Skinny Jeans"])
+
+var product02 = product(["Blouse", "Gucchi", 6, 1500, "Floweral Blouse"])
+//var product03 = product("Trouser", "Jennifer", 5, 800, "Crop Trouser")
+//var product04 = product("Vest", "Jocky", 5, 900, "Sendo Vest")
+//var product05 = product("Tshirt", "Versca", 5, 2000, "Printed Shrit")
+
+
+function doesExit (nums, num){
+    for(var a = 0; a < nums.length; a ++){
+        if( nums[a] === num){
+            return true;
+        }
+    }
+        return false;
+}
+
+
+
+var exit = doesExit([1,5,70,10], 20);
+console.log(exit)
 
