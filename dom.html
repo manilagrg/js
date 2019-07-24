@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document Object Model</title>
+
+    <style>
+        *{
+                margin: 0;
+                padding: 0; 
+            }
+            div h1{
+                background: black; 
+                color: white;
+                padding: 20px;
+                transition: all 2s linear;
+            }
+            div p{
+                background: #2f2f2f;
+                color: white;
+                padding:20px;
+            }
+            header p{
+                background: #2f2f2f;
+                color: white;
+                padding:20px;
+            }
+    </style>
+</head>
+
+
+<body>
+    
+
+    <div class="continer">
+        <h1>Docoment object Model</h1>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
+            standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a 
+            type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+             remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing 
+             Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of 
+             Lorem Ipsum.</p>
+            <button onclick="changeBackground()" >Click Here for color</button>
+    </div>
+
+    
+
+
+    <header id = "header">
+        <h1>Header</h1>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
+                standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a 
+                type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+                 remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing 
+                 Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of 
+                 Lorem Ipsum.</p>
+    
+                 <button onclick="myFunction()" >Click Here for color</button>
+    </header>
+<div class="continer">
+    <h1>Click Here to change color</h1>
+
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
+        standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a 
+        type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+         remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing 
+         Lorem Ipsum passages, </p>
+
+         <button onclick="changeColor()" >Click Here for color</button>
+        </div>
+    </br>
+        <button onclick="bodyColor()" >Click Here for window color change</button>
+    <script src="js/js/dom.js"></script>
+    
+</body>
+</html>
