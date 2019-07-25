@@ -11,6 +11,17 @@
                 margin: 0;
                 padding: 0; 
             }
+            header{
+                transition: all 1s linear;
+            }
+            .header{
+                padding: 50px;
+                position: absolute;
+                right: 0;
+                top: 0;
+                background: green;
+                
+            }
             div h1{
                 background: black; 
                 color: white;
@@ -22,18 +33,13 @@
                 color: white;
                 padding:20px;
             }
-            header p{
-                background: #2f2f2f;
-                color: white;
-                padding:20px;
-            }
+            
     </style>
 </head>
 
 
 <body>
-    
-
+        <div ></div>
     <div class="continer">
         <h1>Docoment object Model</h1>
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
@@ -42,7 +48,8 @@
              remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing 
              Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of 
              Lorem Ipsum.</p>
-            <button onclick="changeBackground()" >Click Here for color</button>
+             <a id = "another" href="http://twitter.com">Twitter Link</a>
+            <button >Click Here for color</button>
     </div>
 
     
@@ -56,10 +63,10 @@
                  remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing 
                  Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of 
                  Lorem Ipsum.</p>
-    
-                 <button onclick="myFunction()" >Click Here for color</button>
+                 <a id = "navigate" href="http://google.com" target="Somewhere">Google Link</a>
+                 <button >Click Here for window color change</button>
     </header>
-<div class="continer">
+<div>
     <h1>Click Here to change color</h1>
 
     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
@@ -68,11 +75,15 @@
          remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing 
          Lorem Ipsum passages, </p>
 
-         <button onclick="changeColor()" >Click Here for color</button>
+         <button >Click Here for window color change</button>
         </div>
     </br>
-        <button onclick="bodyColor()" >Click Here for window color change</button>
+        <button >Click Here for window color change</button>
+
+        
     <script src="js/js/dom.js"></script>
+
+   
     
 </body>
 </html>
